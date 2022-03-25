@@ -1,0 +1,326 @@
+@use 'sass:color';
+$fuentePrincipal: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+  'Helvetica Neue', sans-serif;
+$fuenteMono: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$fuentePrincipalPeso: 400;
+$fuentePrincipalBold: 700;
+$colorPrincipal: #5757f7;
+$color1: #623c97;
+$color2: #e7e057;
+$color3: #f7932e;
+$color4: #2fc1d5;
+$color5: #767a7d;
+$color6: #ffffff;
+$color7: #000f2e;
+
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+blockquote,
+dl,
+dd,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+time {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fuentePrincipal;
+  font-weight: $fuentePrincipalBold;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  border: 0;
+}
+
+ol,
+ul {
+  // list-style: none;
+  // margin: 0;
+  // padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  li {
+    margin: 1em;
+    &::before {
+      content: '';
+      width: 0.5em;
+      height: 0.5em;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: $color4;
+      margin-right: 0.5em;
+      border-radius: 30%;
+    }
+  }
+
+  // margin: 0;
+  // padding: 0;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: $fuentePrincipal;
+  font-weight: $fuentePrincipalPeso;
+}
+
+a,
+a:link {
+  text-decoration: none;
+}
+
+::selection {
+  background-color: color.scale($color2, $lightness: 50%);
+  color: black;
+}
+
+p {
+  line-height: 1.6;
+  margin: 1.5em 0;
+}
+
+article {
+  margin: 1em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 1em;
+}
+
+h2 {
+  border-bottom: 3px solid $color1;
+  padding: 0.5em 0;
+  font-size: 1.6em;
+  margin-bottom: 0.3em;
+}
+
+h3 {
+  border-bottom: 1px dotted;
+  padding: 0.5em 0;
+  font-size: 1.3em;
+  margin-bottom: 0.7em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+.title-icon {
+  text-align: center;
+  display: block;
+  font-size: 2.2em;
+  &.non-material {
+    width: 1.5em;
+    margin: 0 auto;
+  }
+}
+
+.subtitle-icon {
+  color: $color4;
+  font-size: 1.2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inline-icon {
+  width: 32px;
+  height: auto;
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 1em 0.5em 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid;
+  padding: 0.5em;
+}
+
+td {
+  border: 1px dotted;
+  padding: 0.5em;
+}
+
+.check {
+  display: inline-block;
+  vertical-align: bottom;
+  padding-right: 0.3em;
+  color: green;
+
+  &.no-puede {
+    color: red;
+  }
+
+  &.puede {
+    color: #767a7d;
+  }
+}
+
+#tutorial-gds {
+  width: 100%;
+  margin: 0;
+  height: 80vh;
+}
+
+blockquote {
+  background-color: #dddddd;
+  font-size: 0.8em;
+
+  p {
+    padding: 1em;
+  }
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.historia {
+  font-size: 1.2em;
+  background-color: #e7e057b6;
+  font-weight: bold;
+  padding: 1em;
+  margin: 1em 3em;
+  color: rgb(60, 109, 165);
+}
+
+#api {
+  display: inline-block;
+  background-color: #353e50;
+  color: white;
+  padding: 1em;
+
+  .icono {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    text-align: center;
+    p {
+      margin: 0;
+      max-width: 80px;
+      line-height: 1;
+    }
+  }
+
+  .material-icons {
+    font-size: 2.2em;
+    color: #d4dcec;
+
+    &.servicio {
+      font-size: 3em;
+      color: #cddfe7;
+    }
+  }
+
+  .texto {
+    border: 1px solid #ecebca;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+}
+
+.proyecto {
+  width: 33%;
+  padding: 1em;
+  border: 1px dotted rgb(11, 75, 128);
+  display: inline-block;
+  border-radius: 20px;
+  vertical-align: top;
+  margin: 1em 0;
+
+  .descripcion {
+    font-size: 0.8em;
+  }
+}
