@@ -65,9 +65,8 @@ La principal actividad para desarrollar este objetivo es el Laboratorio 1, que s
 
 **El propósito de esto es:**
 
-1. Que relaciones el proceso lógico de los dominios de un proyecto de analítica de datos con el proceso lógico de desarrollar algoritmos que permiten la implementación real del proyecto. 
+1. Que relaciones el proceso lógico de los dominios de un proyecto de analítica de datos con el proceso lógico de desarrollar algoritmos que permiten la implementación real del proyecto. <br>
 (Podcast 2: *¿Qué tiene que ver el diseño con la algorítmica y la analítica de datos?*.)
-<br>
 
 2. Que tengas la oportunidad de refrescar tus conocimientos de programación (en general y en Python), o de consolidarlos si apenas te inicias en ella.
 <br>
